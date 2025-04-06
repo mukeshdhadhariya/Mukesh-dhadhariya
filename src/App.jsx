@@ -95,9 +95,8 @@ export default function Portfolio() {
                 if (section) section.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className="bg-black/60 border border-blue-400 text-white px-2 py-1 rounded-md text-sm"
+            className="bg-black/60 border border-blue-400 text-blue-300 px-2 py-1 rounded-md text-sm"
           >
-            <option value="">Menu</option>
             <option value="home">Home</option>
             <option value="about">About</option>
             <option value="projects">Projects</option>
@@ -118,18 +117,7 @@ export default function Portfolio() {
             className="w-full h-full object-cover rounded-full"
           />
         </div>
-        {/* <h2 className="text-3xl sm:text-6xl font-bold mb-4 text-blue-400">
-        Hey, I’m
-        <Typewriter
-          words={[' web developer 👋', ' mukesh dhadhariya 👋']}
-          loop={false}
-          cursor
-          cursorStyle='_'
-          typeSpeed={70}
-          deleteSpeed={50}
-          delaySpeed={1000}
-        />
-        </h2> */}
+
         <h2 className="text-3xl sm:text-6xl font-bold mb-4 text-blue-400 leading-tight sm:leading-snug break-words">
           <span className="block sm:inline">Hey, I’m</span>{' '}
           <Typewriter
@@ -185,6 +173,7 @@ export default function Portfolio() {
       >
         <h3 className="text-3xl font-bold text-blue-300 mb-8">My Work</h3>
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 w-full max-w-5xl">
+
           <div className="bg-gray-800/70 p-6 rounded-lg border border-gray-700 shadow-xl hover:border-blue-400 transition-transform hover:scale-105 backdrop-blur-md">
             <h4 className="text-xl font-semibold mb-2 text-white">
               Neha AI - Personal AI Girlfriend
@@ -209,6 +198,7 @@ export default function Portfolio() {
               </a>
             </div>
           </div>
+
           <div className="bg-gray-800/70 p-6 rounded-lg border border-gray-700 shadow-xl hover:border-blue-400 transition-transform hover:scale-105 backdrop-blur-md">
             <h4 className="text-xl font-semibold mb-2 text-white">
               StudyMate - Study Material Sharing
@@ -232,6 +222,7 @@ export default function Portfolio() {
               </a>
             </div>
           </div>
+
           <div className="bg-gray-800/70 p-6 rounded-lg border border-gray-700 shadow-xl hover:border-blue-400 transition-transform hover:scale-105 backdrop-blur-md">
             <h4 className="text-xl font-semibold mb-2 text-white">
               Random Audio Call App
@@ -255,6 +246,31 @@ export default function Portfolio() {
               </a>
             </div>
           </div>
+
+          <div className="bg-gray-800/70 p-6 rounded-lg border border-gray-700 shadow-xl hover:border-blue-400 transition-transform hover:scale-105 backdrop-blur-md">
+            <h4 className="text-xl font-semibold mb-2 text-white">
+              Random Audio Call App
+            </h4>
+            <p className="text-gray-400 mb-3">
+              Randomly pairs users for anonymous audio calls. Built with React,
+              WebRTC, and Socket.io.
+            </p>
+            <div className="flex gap-4 text-sm">
+              <a
+                href="https://github.com/mukeshdhadhariya/random-audio-call"
+                className="flex items-center gap-1 text-blue-400 hover:underline"
+              >
+                <Github className="w-4 h-4" /> GitHub
+              </a>
+              <a
+                href="#"
+                className="flex items-center gap-1 text-blue-400 hover:underline"
+              >
+                <Link className="w-4 h-4" /> Live Demo
+              </a>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -310,14 +326,15 @@ export default function Portfolio() {
           ></textarea>
           <button
             type="submit"
-            className="bg-blue-600/80 hover:bg-blue-600/90 px-6 py-2 rounded-md font-semibold backdrop-blur-md transition-transform hover:scale-105 shadow-md shadow-blue-400/30"
+            className="text-center border border-blue-400 text-blue-400 hover:bg-blue-400/20 hover:text-white px-6 py-2 rounded-lg font-semibold backdrop-blur-md transition-transform hover:scale-105 shadow-md shadow-blue-400/30 w-full sm:w-auto"
           >
             Send Message
           </button>
         </form>
-        <div className="flex justify-center gap-6 text-2xl mt-6">
+
+        {/* <div className="flex justify-center gap-6 text-2xl mt-6">
           <a
-            href="mailto:officialmukeshdhadhariya@gmail.com"
+            href="mailto:mukeshdhadhariya1@gmail.com"
             className="rounded-full p-3 bg-gray-800 hover:bg-blue-600 text-white transition-all duration-300 shadow-md hover:shadow-blue-400"
           >
             <Mail />
@@ -329,12 +346,34 @@ export default function Portfolio() {
             <Github />
           </a>
           <a
-            href="https://linkedin.com/in/mukeshdhadhariya"
+            href="https://www.linkedin.com/in/mukesh-dhadhariya-5a4b99290/"
             className="rounded-full p-3 bg-gray-800 hover:bg-blue-600 text-white transition-all duration-300 shadow-md hover:shadow-blue-400"
           >
             <Linkedin />
           </a>
+        </div> */}
+
+        <div className="flex justify-center gap-6 text-2xl mt-6">
+          <a
+            href="mailto:mukeshdhadhariya1@gmail.com"
+            className="flex items-center justify-center rounded-full p-3 border border-blue-400 text-blue-400 hover:bg-blue-400/20 hover:text-white transition-transform hover:scale-105 shadow-md shadow-blue-400/30 backdrop-blur-md"
+          >
+            <Mail />
+          </a>
+          <a
+            href="https://github.com/mukeshdhadhariya"
+            className="flex items-center justify-center rounded-full p-3 border border-blue-400 text-blue-400 hover:bg-blue-400/20 hover:text-white transition-transform hover:scale-105 shadow-md shadow-blue-400/30 backdrop-blur-md"
+          >
+            <Github />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mukesh-dhadhariya-5a4b99290/"
+            className="flex items-center justify-center rounded-full p-3 border border-blue-400 text-blue-400 hover:bg-blue-400/20 hover:text-white transition-transform hover:scale-105 shadow-md shadow-blue-400/30 backdrop-blur-md"
+          >
+            <Linkedin />
+          </a>
         </div>
+
       </section>
 
       {/* Footer */}
@@ -369,6 +408,7 @@ export default function Portfolio() {
           }
         }
       `}</style>
+
     </main>
   );
 }
