@@ -142,7 +142,7 @@ export default function Portfolio() {
             Explore Projects
           </button>
           <a
-            href="/MukeshDhadhariya.pdf"
+            href="./MukeshDhadhariya.pdf"
             download="MukeshDhadhariya.pdf"
             className="flex items-center gap-2 border border-blue-400 text-blue-400 hover:bg-blue-400/20 hover:text-white px-6 py-2 rounded-lg font-semibold backdrop-blur-md transition-transform hover:scale-105 shadow-md shadow-blue-400/30"
           >
